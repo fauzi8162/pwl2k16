@@ -6,11 +6,17 @@ class Register extends CI_Controller {
         if ($this->session->userdata('logged') != true){
             redirect('Login');
         } 
+        $this->load->model('MUser');
+        $this->load->model('MMahasiswa');
     }
 
     public function index()
     {
-        $this->load->view('register');
+        $username = $this->session->userdata('username');
+        $data['username']=$username; 
+        $data['result'] = $this->MMahasiswa->getList($username);
+        $this->load->view('register',$data);
     }  
+
 }
 ?>

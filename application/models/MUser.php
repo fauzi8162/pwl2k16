@@ -1,6 +1,6 @@
 <?php
 class MUser extends CI_Model {
-	public $table = "mahasiswa";
+	public $table = "user";
 	public function __construct()
 	{
 		parent::__construct();
@@ -18,5 +18,6 @@ class MUser extends CI_Model {
 		} 
 
 	}
+
 }
 ?>
