@@ -1,6 +1,6 @@
 <?php 
 class MDaftar extends CI_Model{
-	public $table = "pendaftara";
+	public $table = "pendaftaran";
 	function __construct(){
 		parent::__construct();
 	}
@@ -18,14 +18,14 @@ class MDaftar extends CI_Model{
 
 	public function add(){
 		$arrayData = array(
-		'id'      = $this->id,
-		'nim'     = $this->nim,     
-		'id_ukm'  = $this->id_ukm , 
-		'id_ukm2' = $this->id_ukm2,
-		'id_ukm3' = $this->id_ukm3,
-		'alasan1' = $this->alasan1,
-		'alasan2' = $this->alasan2,
-		'alasan3' = $this->alasan3,
+		'id'      => $this->id,
+		'nim'     => $this->nim,     
+		'id_ukm'  => $this->id_ukm , 
+		'id_ukm2' => $this->id_ukm2,
+		'id_ukm3' => $this->id_ukm3,
+		'alasan1' => $this->alasan1,
+		'alasan2' => $this->alasan2,
+		'alasan3' => $this->alasan3,
 		);
 		return $this->db->insert($this->table, $arrayData); 
 	}
@@ -74,6 +74,6 @@ class MDaftar extends CI_Model{
 			return false;
 		}		
 	}
-
+*/
 }
 ?>

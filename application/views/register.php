@@ -2,12 +2,12 @@
 echo "<h1> Form Register </h1>";
 ?>
  <a href="<?php echo site_url()?>/Login/logout">Logout</a>
-<form action="">
+<form action="<?php echo site_url()?>/Daftar/input" action="post">
 	<table>
 		<tr>
 			<td>NIM</td>
 			<td>:</td>
-			<td><input type="text" name="" disabled value="<?php echo $username?>"></td>
+			<td><input type="text" name="nim" disabled value="<?php echo $username?>"></td>
 		</tr>
 		<tr>
 			<td>Nama</td>
@@ -69,7 +69,7 @@ echo "<h1> Form Register </h1>";
 			<td><textarea type="text" name="alasan3" ></textarea></td>
 		</tr>
 	</table>
-	<input type="submit" name="kirim" value="kirim">
+	<input type="submit" name="submit" value="kirim">
 </form>
 <?php
 

@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Login Admin Rental</title>
+    <title>Expo 2017</title>
     <link href="<?php echo base_url()?>assets/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container col-xs-8">
-      <h2>Login App. Rental</h2>
+      <h2>Login Expo 2017</h2>
       <?php $pesan = $this->session->flashdata('pesan');?>
       <?php if (@$pesan):?>
       <div class="alert alert-danger">
